@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/72853dacd3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+       <div class="container">
+          <nav>
+            <img src= "images/slogo3.png" class="logo">
+            <img src="images/me2.png" class="me-img">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#certificates">Certifications</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <i class="fa-solid fa-code"></i>
+            <p class="para">Budding software enthusiast :)</p>
+            <h1>Hi, I'm <span>Shanmuga Rajeshwaran</span><br> from Chennai, TN..!</h1>
+          </div>
+       </div>
+       </div>
+       <!----about---- -->
+       <div id="about">
+        <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+          <img src="images/abtimg.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About me</h1>
+          <br>
+          <p>Motivated Computer Science Bachelor’s graduate skilled in software development, database management, and technologies
+            like Java, JDBC, Oracle, HTML, CSS, and Angular. Completed projects in bus ticket reservation and image
+            steganography. Certified in Cloud Computing and Cybersecurity, eager to contribute to software engineering projects.</p>
+            <br>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"  onclick="opentab('education')">Education</p>
+            <p class="tab-links"  onclick="opentab('projects1')">Projects</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills" >
+            <ul>
+              <li><Span>Java</Span><br>Object Oriented Programming Concepts,Data Structures And Algorithms</li>
+              <li><Span>Web Development</Span><br>JavaScript,Typescript,Angular</li>
+              <li><Span>Oracle SQl</Span><br>Database Management System</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><Span>2020-2024</Span><br>Sri Sairam Institute Of Technology
+              <li>
+                Grade:8.08
+              </li>
+              </li>
+              <li><Span>2019-2020</Span><br>Mount Zion Matriculation Higher Secondary School
+                <li>
+                  Grade:73%
+                </li>
+              </li>
+              <li><Span>2017-2018</Span><br>Mount Zion Matriculation Higher Secondary School
+                <li>
+                  Grade:91.2%
+                </li>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="projects1">
+            <ul>
+              <li><Span>Bus Ticket Reservation System using JDBC</Span><br>Developed a bus ticket reservation system for efficient booking and scheduling, using JDBC for smooth database interaction and reliable data storage</li>
+              <li><Span>Image Steganography Using LSB Algorithm</Span><br>Developed a security tool using steganography techniques to hide sensitive data in media files.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+       </div>
+      </div>
+      <!-- certificates-->
+       <div id="certificates">
+        <div class="container">
+          <h1 class="subtitle">Certifications</h1>
+          <div class="certificates-list">
+            <div>
+              <i class="fa-solid fa-shield-halved"></i>
+              <h2>Cisco Cybersecurity</h2>
+              <ul>
+                <li><a href="images/cisco/Cybersecurity_Essentials_certificate_sit20cs115-sairamtap-edu-in_7c74fbfd-6f3f-4e1d-96f2-3ab5f03aaa5e (2).pdf" download="">Cyber security Essentials</a></li>
+                <li><a href="images/cisco/Introduction_to_Cybersecurity_certificate_sit20cs115-sairamtap-edu-in_5e1adcd6-9229-4f03-b2aa-a9c2dc954c95 (1).pdf" download="">Introduction to Cybersecurity</a></li>
+                <li><a href="images/cisco/Introduction_to_Packet_Tracer_certificate_sit20cs115-sairamtap-edu-in_f82c46de-83b8-4126-9af5-4616cdff7f95 (1).pdf" download="">Introduction to Packet Tracer</a></li>
+                <li><a href="#">Cloud Security</a></li>
+              </ul>
+            
+            </div>
+            <div>
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <h2>NPTEL</h2>
+              <ul>
+                <li><a href="images/nptel/Cloud computing.jpg" download="">Cloud Computing</a></li>
+                <li><a href="images/nptel/Ethics In Engineering Practice.pdf" download="">Ethics in Engineering Practices </a></li>
+                <li><a href="images/nptel/Design & Implementation Of Human-Computer Interfaces.pdf" download="">Design & Implementation of Human - Computer Interfaces</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </div>
+     <!--portfolio-->
+     <!--contact-->
+     <div id="contact">
+      <div class="container">
+         <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact me</h1>
+            <p><i class="fa-solid fa-envelope"></i>shanmugarajesh0602@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8778615460</p>
+            <br>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/shanmugarajeshwaran07/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://leetcode.com/u/sha0707/"><i class="fa-solid fa-code"></i></a>
+              <a href="https://github.com/Sha0706"><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <a href="images/Shanmuga_Rajeshwaran_resume_2025.pdf" download class="btn btn2">Download Resume</a>
+          </div>
+          
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+         </div>
+      </div>
+     </div>
+    </div>
+
+
+      <script>
+       var  tablinks = document.getElementsByClassName("tab-links");
+       var  tabcontents = document.getElementsByClassName("tab-contents");
+       function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+      
+      </script>
+      <script>
+       var sidemenu = document.getElementById("sidemenu");
+
+       function openmenu(){
+        sidemenu.style.right = "0";
+       }
+       function closemenu(){
+        sidemenu.style.right = "-200px";
+       }
+
+      </script>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzbVno-ziJlq3S8KA9G5hH7ExkfzbWq96ro8yENaGBmE2Z1PZoFYmzecgydpSPKgvz5yA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message sent successfully!"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+</body>
+</html>
